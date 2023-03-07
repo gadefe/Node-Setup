@@ -37,4 +37,8 @@ influxd -config /etc/influxdb/influxdb.conf
 to run influx type the commd below
 influx
 
+ubuntu command to view the running instances and port
+
+sudo lsof -i -P
+
 
