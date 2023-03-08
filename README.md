@@ -41,4 +41,8 @@ ubuntu command to view the running instances and port
 
 sudo lsof -i -P
 
+https://www.youtube.com/watch?v=Vq4cDIdz_M8
+
+
+
 
