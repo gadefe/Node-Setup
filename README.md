@@ -44,5 +44,8 @@ sudo lsof -i -P
 https://www.youtube.com/watch?v=Vq4cDIdz_M8
 
 
+https://www.youtube.com/watch?v=yHTWzFpgCuk&t=211s
+
+
 
 
