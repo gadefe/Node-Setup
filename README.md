@@ -47,19 +47,22 @@ https://www.youtube.com/watch?v=Vq4cDIdz_M8
 https://www.youtube.com/watch?v=yHTWzFpgCuk&t=211s
 
 
-********** Working NODERED setup ********
+# ********** Working NODERED setup ********
 
 I started with this image:
 https://downloads.raspberrypi.org/r...021-05-28/2021-05-07-raspios-buster-armhf.zip
+
+
 and copied it to a SD card using https://www.balena.io/etcher/
 after copying don't forget to create a ssh.txt file on the SD-card, so that putty will work :)
 
 use putty and the IP given by your router to log in via ssh
 
-Install grafana:
+# Install grafana:
+
 sudo apt-get install -y apt-transport-https && sudo apt-get install -y software-properties-common wget && wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add - && echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list && sudo apt-get update && sudo apt-get install grafana-enterprise && sudo service grafana-server start && sudo systemctl start grafana-server && sudo systemctl enable grafana-server && sudo grafana-cli plugins install grafana-clock-panel
 
-Install influx:
+# Install influx:
 sudo apt-get install influxdb && sudo service influxdb start && sudo apt install influxdb-client && sudo systemctl enable --now influxdb
 start influx
 influx
@@ -68,7 +71,7 @@ create user batrium with password 'batrium'
 grant all on batrium to batrium
 exit
 
-install node-red:
+# install node-red:
 sudo apt install build-essential git curl && bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) --nodered-version="1.3.5" --node14
 sudo systemctl enable nodered.service
 sudo systemctl enable nodered
