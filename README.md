@@ -64,7 +64,8 @@ sudo apt-get install -y apt-transport-https && sudo apt-get install -y software-
 
 # Install influx:
 sudo apt-get install influxdb && sudo service influxdb start && sudo apt install influxdb-client && sudo systemctl enable --now influxdb
-start influx
+
+start influxstart 
 influx
 create database batrium
 create user batrium with password 'batrium'
@@ -76,7 +77,7 @@ sudo apt install build-essential git curl && bash <(curl -sL https://raw.githubu
 sudo systemctl enable nodered.service
 sudo systemctl enable nodered
 sudo systemctl start nodered
-cd /home/pi/.node-red
+cd /home/pi/.node-redionflux
 npm install binary-parser
 start node-red once
 node-red
