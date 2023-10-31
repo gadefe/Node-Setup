@@ -66,10 +66,15 @@ sudo apt-get install -y apt-transport-https && sudo apt-get install -y software-
 sudo apt-get install influxdb && sudo service influxdb start && sudo apt install influxdb-client && sudo systemctl enable --now influxdb
 
 start influxstart 
+
 influx
+
 create database batrium
+
 create user batrium with password 'batrium'
+
 grant all on batrium to batrium
+
 exit
 
 # install node-red:
