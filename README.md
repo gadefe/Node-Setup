@@ -74,14 +74,23 @@ exit
 
 # install node-red:
 sudo apt install build-essential git curl && bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) --nodered-version="1.3.5" --node14
+
 sudo systemctl enable nodered.service
+
 sudo systemctl enable nodered
+
 sudo systemctl start nodered
+
 cd /home/pi/.node-redionflux
+
 npm install binary-parser
+
 start node-red once
+
 node-red
-and close it after starting => thats how the settings.js is cretaed intially
+
+and close it after starting => thats how the settings.js is cretaed initially
+
 
 edit /home/pi/.node-red/settings.js and add after the following line: "functionGlobalContext:" => binary_parser:require('binary-parser').Parser
 sudo nano /home/pi/.node-red/settings.js
