@@ -77,6 +77,19 @@ grant all on batrium to batrium
 
 exit
 
+
+# Install mosquito server mqtt:
+sudo apt update
+sudo apt upgrade
+sudo apt install mosquitto mosquitto-clients
+sudo systemctl status mosquito
+mosquitto_sub -h localhost -t "mqtt/pimylifeup"
+mosquitto_pub -h localhost -t "mqtt/pimylifeup" -m "Hello world"
+
+
+
+
+
 # install node-red:
 sudo apt install build-essential git curl && bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) --nodered-version="1.3.5" --node14
 
