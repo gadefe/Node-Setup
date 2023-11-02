@@ -79,11 +79,17 @@ exit
 
 
 # Install mosquito server mqtt:
+
 sudo apt update
+
 sudo apt upgrade
+
 sudo apt install mosquitto mosquitto-clients
+
 sudo systemctl status mosquito
+
 mosquitto_sub -h localhost -t "mqtt/pimylifeup"
+
 mosquitto_pub -h localhost -t "mqtt/pimylifeup" -m "Hello world"
 
 
