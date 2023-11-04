@@ -156,3 +156,11 @@ batrium_node_red_flow_2_14.zip
 22 KB · Views: 108
 Batrium-grafana_dashboard_16cell.zip
 4.3 KB · Views: 105
+
+
+# ********* Tasmota Configuration  **********
+# Node Red Function
+
+msg.payload = msg.payload.DHT11.Temperature +" deg "+msg.payload.TempUnit;
+
+return msg;
