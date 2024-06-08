@@ -164,3 +164,7 @@ Batrium-grafana_dashboard_16cell.zip
 msg.payload = msg.payload.DHT11.Temperature +" deg "+msg.payload.TempUnit;
 
 return msg;
+
+link to configure pzcem power module
+
+https://github.com/arendst/Tasmota/discussions/10567
