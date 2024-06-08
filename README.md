@@ -168,3 +168,6 @@ return msg;
 link to configure pzcem power module
 
 https://github.com/arendst/Tasmota/discussions/10567
+
+
+https://randomnerdtutorials.com/node-red-with-xiaomi-yeelight-rgbw-smart-bulb/
